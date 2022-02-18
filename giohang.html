@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Reset Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Gio hang</title>
+  </head>
+  <body>
+    <!-- Menu  -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand menucolor" href="#">Trang chủ</a>
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="menucon nav-link menucolor" aria-current="page" href="#"
+                  >Giới thiệu</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Sản phẩm</a>
+                </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="menucon nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/sanphamCc.html">Bánh Cupcake</a></li>
+                  <li><a class="dropdown-item" href="#">Bánh Kem</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Sản phẩm khác</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="menucon nav-link menucolor" href="#"
+                  >Tin tức Khuyến mãi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="menucon nav-link menucolor" href="/lienhe.html"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav  navbar-right submenu" >
+              <li><a href="giohang.html"><i class="nav-icon bi bi-bag"></i></a>
+                
+              </li>
+              <li><a href="#"><i class="nav-icon bi bi-person-circle"></i></a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- </div>
+  </div> -->
+</header>
+    
+    <headerr>
+      <div class="contain-head">
+        <div class="contain-head__icon">
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        <div class="d-flex justify-content-center contain-head__text">
+          <span>Giỏ hàng của bạn</span>
+        </div>
+      </div>
+      
+
+      <div class="table-container d-flex justify-content-center mt-50 mb-50">
+        <table class="table  table-product">
+          <thead class="table-head">
+            <tr>
+              <!-- <th scope="col">Mã sản phẩm</th> -->
+              <th scope="col">Sản phẩm</th>
+              <th scope="col">Ảnh</th>
+              <th>Đơn giá</th>
+              <th scope="col">Số lượng</th>
+              <!-- <th scope="col">Size</th> -->
+              <th >Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table_row" >
+              <!-- <th scope="row">1</th> -->
+              <td>Bánh huhuhuhhu</td>
+              <td><img src="IMG/1.png"  /></td>
+              <td>100.000đ</td>
+              <td>1</td>
+              <!-- <td>M</td> -->
+              <td>100.000đ</td>
+            </tr>
+            <tr class="table_row" >
+              <!-- <th scope="row">1</th> -->
+              <td>Bánh 1</td>
+              <td><img src="IMG/2.png" w /></td>
+              <td>100.000đ</td>
+              <td>3</td>
+              <!-- <td>M</td> -->
+              <td>300.000đ</td>
+            </tr>
+            <tr class="table_row" >
+              <!-- <th scope="row">1</th> -->
+              <td>Bánh 1</td>
+              <td><img src="IMG/1.png"  /></td>
+              <td>100.000đ</td>
+              <td>2</td>
+              <!-- <td>M</td> -->
+              <td>200.000đ</td>
+            </tr>
+            <tr class="table_row" >
+              <!-- <th scope="row">1</th> -->
+              <td>Bánh 1</td>
+              <td><img src="IMG/1.png"  /></td>
+              <td>100.000đ</td>
+              <td>1</td>
+              <!-- <td>M</td> -->
+              <td>100.000đ</td>
+            </tr>
+            <tr class="table_row" >
+              <!-- <th scope="row">1</th> -->
+              <td>Bánh 1</td>
+              <td><img src="IMG/1.png"  /></td>
+              <td>100.000đ</td>
+              <td>1</td>
+              <!-- <td>M</td> -->
+              <td>100.000đ</td>
+            </tr>
+            
+          </tbody>
+          <tfoot class="table-foot">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Tổng giá </td>
+              <td>800.000đ</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="order">
+        <a href="#">Đặt hàng</a>
+      </div>
+    </headerr>
+    
+    <footer class="footer">
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+            <ul class="footer_list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">BaoVy Store</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Giới thiệu</h3>
+            <ul class="footer_list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Giới thiệu</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Tuyển dụng </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Điều khoản</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Danh mục</h3>
+            <ul class="footer_list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Bánh kem ngọt</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Bánh kem mặn</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Bánh kem chua</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Theo dõi</h3>
+            <ul class="footer_list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">
+                  <i class="footer-item__icon bi bi-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">
+                  <i class="footer-item__icon bi bi-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">
+                  <i class="footer-item__icon bi bi-linkedin"></i>
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+            <div class="footer__dowload">
+              <div class="footer__dowload-apps">
+                <img
+                  src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png"
+                  class="footer__dowload-app-img"
+                  width="200"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="grid">
+            <div class="grid__row">
+              <p class="footer__text">
+                © 2022 - Bản quyền thuộc về Công ty TNHH 1 thành viên
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+    <style>
+      * {
+    /* margin: 0;
+    padding: 0;
+    outline: none;border: none;
+    text-decoration: none; */
+    box-sizing: inherit;
+}
+    :root {
+        --primary-color :#EE4D2D;
+        --text-color : #333;
+        --border-color :#dbdbdb;
+        --white-color : #fff;
+
+        --header-height :120px;
+        --navbar-height : 34px;
+        
+    }
+    html {
+        box-sizing: border-box;
+        /* font-size: 62.5%; */
+        line-height: 1.6rem;
+        font-family: 'Roboto',sans-serif;
+    }
+
+    header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.navbar {
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    justify-content: flex-end;
+}
+
+.navbar .navbar-brand  {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.navbar .navbar-nav .menucon {
+    color: #c0c906;
+}
+
+.navbar .menucon {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.submenu .nav-icon {
+    font-size: 30px;
+    display: flex;
+    padding: 0 10px;
+    text-decoration: none ;
+}
+
+.container-fluid a{
+line-height: 60px;
+}
+
+.submenu li{
+    padding: 0 10px;
+}
+.submenu a{
+    text-decoration: none ;
+    list-style: none ;
+    color: black;
+}
+
+.submenu i {
+    height:1rem;
+    font-size: 1.5em;
+    text-decoration: none ;
+}
+
+      /* Responsive */
+      .grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: 16,6667%; */
+    width: 15%;
+}
+
+.grid__column-2-4{
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: 82%; */
+    width: 85%;
+}
+/* ************************** */
+
+
+      /* table */
+      .image img {
+        height: 150px;
+      }
+
+      .contain-head {
+        display: flex;
+        justify-content: center;
+        
+        margin: 25px 0;
+      }
+
+      .contain-head__icon {
+        font-size: 1.8rem;
+        margin-right: 10px;
+        color: yellow;
+      }
+
+      .contain-head__text {
+        font-size: 2.3rem;
+        text-transform: capitalize;
+        color: rgb(224, 224, 8);
+      }
+
+      .table-container {
+        max-width: 70%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+
+      .table-product {
+        text-align: center;
+        /* border: hidden; */
+        border-radius:1px;
+        border: 1px solid black;
+        /* border-color: #fff; */
+      }
+
+      .table-product th {
+        padding: 0 10px;
+      }
+      .table-head {
+        font-size: 1.5rem;
+      }
+
+
+      .table-body td {
+        text-align: center;
+      }
+      
+      .table_row td{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 8rem;
+      }
+
+      .table_row img{
+        width: 100px;
+        padding: 15px 0;
+      }
+      
+      .table-foot {
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+
+      /* order */
+      .order {
+        padding: 15px 0;
+        justify-content: center;
+        display: flex;
+        
+      }
+
+      .order a {
+        
+        color: white;
+        text-decoration: none;
+        background-color: yellow;
+        display: block;
+        line-height: 44px;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px ;
+      }
+
+      /* footer */
+      .footer {
+        padding-top: 12px;
+        border-top: 4px solid var(--primary-color);
+        background-color: whitesmoke;
+      }
+
+      .footer__heading {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: var(--text-color);
+      }
+
+      .footer_list {
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .footer-item__link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #737373;
+        padding: 2px 0;
+        display: block;
+        align-items: center;
+      }
+
+      .footer-item__link:hover {
+        color: var(--primary-color);
+      }
+
+      .footer-item__icon {
+        font-size: 1.2rem;
+        margin-top: -1px;
+      }
+
+      .footer__dowload {
+        display: flex;
+      }
+
+      .footer__dowload-apps {
+        flex: 1;
+      }
+      .footer__dowload-app-img {
+        height: 100px;
+      }
+
+      .footer__bottom {
+        background-color: #f5f5f5;
+        padding: 8px 0;
+        margin-top: 36px;
+      }
+
+      .footer__text {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #737373;
+      }
+    </style>
+  </body>
+</html>

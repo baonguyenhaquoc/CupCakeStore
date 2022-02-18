@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Bánh CupCake</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand menucolor" href="trangchu.html">Trang chủ</a>
+            <div class="collapse navbar-collapse" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="menucon nav-link menucolor" aria-current="page" href="#"
+                    >Giới thiệu</a
+                  >
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Sản phẩm</a>
+                  </li> -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="menucon nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sản phẩm
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/sanphamCc.html">Bánh CupCake</a></li>
+                    <li><a class="dropdown-item" href="/sanphamBd.html">Bánh Kem</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Sản phẩm khác</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="menucon nav-link menucolor" href="#"
+                    >Tin tức Khuyến mãi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="menucon nav-link menucolor" href="/lienhe.html"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav  navbar-right submenu" >
+                <li><a href="giohang.html"><i class="nav-icon bi bi-bag"></i></a>
+                  
+                </li>
+                <li><a href="#"><i class="nav-icon bi bi-person-circle"></i></a>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- </div>
+    </div> -->
+    </header>
+
+    <div class="content-category">
+        <div class="grid">
+          <div class="grid__row content-cate">
+            <div class="grid__column-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  
+                  Danh mục
+                </h3>
+                <ul class="category-list">
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Bánh 1</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Bánh 2</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Bánh 3</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Bánh 4</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+                    <!--   Filter     -->
+            <div class="grid__column-10">
+                <div class="home-filter">
+                    <span class="home-filter__label">Sắp xếp theo</span>
+                    <button class="home-filter__btn btn">Phổ biến</button>
+                    <button class="home-filter__btn btn">Mới nhất</button>
+                    <button class="home-filter__btn btn">Bán chạy</button>
+
+                    <div class="select-input">
+                        <span class="select-input__label">Giá</span>
+                        <i class="select-input__icon bi bi-caret-down-fill"></i>
+                        <ul class="select-input__list">
+                            <li class="select-input__item">
+                                <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                            </li>
+                            <li class="select-input__item">
+                                
+                                <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="home-filter__page">
+                        <span class="home-filter__page-num">
+                            <span class="home-filter__page-current">1</span>
+                            /14
+                        </span>
+                        <div class="home-filter__page-control">
+                            <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                <i class="home-filter__page-icon bi bi-caret-left"></i>
+                            </a>
+                            <a href="" class="home-filter__page-btn">
+                                <i class="home-filter__page-icon bi bi-caret-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product item -->
+              <div class="home-product">
+                  <div class="grid__row">
+                    <div class="grid__column-2-4 ">
+                      <a class="home-product-item" href="#">
+                        <!-- style="background-image: url(/assets/SP/cc/cc1.png)" -->
+                          <div class="home-product-item__img" > 
+                              <img src="/assets/SP/cc/cc1.png" alt="" >
+                          </div>
+                          <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                          <div class="home-product-item__price">
+                              <span class="home-product-item__price-old">500.000đ</span>
+                              <span class="home-product-item__price-current">300.000đ</span>
+                          </div>
+                          <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                <i class=" bi bi-star-fill"></i>
+                              </div>
+                          </div>
+                          <div class="home-product-item__favourite">
+                            <i class="bi bi-check"></i>
+                              <span>Yêu thích</span>
+                          </div>
+                          <div class="home-product-item__sale-off">
+                              <span class="home-product-item__sale-off-percent">10%</span>
+                              <span class="home-product-item__sale-off-label">GIẢM</span>
+                          </div>
+                      </a>
+                    </div>
+                    <div class="grid__column-2-4 home-product-item-wrapper">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc2.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc2.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc3.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc3.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc4.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc4.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc5.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc5.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc6.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc6.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc7.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc7.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc8.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc8.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc9.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc5.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="grid__column-2-4">
+                        <a class="home-product-item" href="#">
+                            <!-- style="background-image: url(/assets/SP/cc/cc10.png)" -->
+                            <div class="home-product-item__img" >
+                                <img src="/assets/SP/cc/cc8.png" alt="">
+                            </div>
+                            <h4 class="home-product-item__name">Bánh kem chuối</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-current">300.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-emty bi bi-suit-heart"></i>
+                                  <i class="home-product-item__like-icon-fill bi bi-suit-heart-fill"></i>
+                                </span>
+                                <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class="home-product-item__star--gold bi bi-star-fill"></i>
+                                  <i class=" bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="home-product-item__favourite">
+                              <i class="bi bi-check"></i>
+                                <span>Yêu thích</span>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                      </div> 
+                  </div>
+              </div>
+
+                <!-- pagination -->
+                  <ul class="pagination home-product__pagination">
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">
+                            <i class="pagination-item__icon bi bi-caret-left"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="pagination-item pagination-item--active">
+                      <a href="" class="pagination-item__link">1</a>
+                  </li>
+                  <li class="pagination-item">
+                      <a href="" class="pagination-item__link">2</a>
+                  </li>
+                  <li class="pagination-item">
+                      <a href="" class="pagination-item__link">3</a>
+                  </li>
+                  <li class="pagination-item">
+                      <a href="" class="pagination-item__link">4</a>
+                  </li>
+                  <li class="pagination-item">
+                      <a href="" class="pagination-item__link">5</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link">...</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-item__link">16</a>
+                </li>
+
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link">
+                        <i class="pagination-item__icon bi bi-caret-right"></i>
+                    </a>
+                </li>
+                  </ul>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <footer class="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer_list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                            <a href="" class="footer-item__link">BaoVy Store</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Giới thiệu</h3>
+                    <ul class="footer_list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tuyển dụng </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Danh mục</h3>
+                    <ul class="footer_list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Bánh kem ngọt</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Bánh kem mặn</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Bánh kem chua</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Theo dõi</h3>
+                    <ul class="footer_list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon bi bi-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon bi bi-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon bi bi-linkedin"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                    <div class="footer__dowload">
+                        <div class="footer__dowload-apps">
+                            <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png" class="footer__dowload-app-img" width="200" >
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid">
+                    <div class="grid__row">
+                        <p class="footer__text">© 2022 - Bản quyền thuộc về Công ty TNHH 1 thành viên</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </footer>
+
+
+
+
+     <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+<style>
+    * {
+    /* margin: 0;
+    padding: 0;
+    outline: none;border: none;
+    text-decoration: none; */
+    box-sizing: inherit;
+}
+    :root {
+        --primary-color :#EE4D2D;
+        --text-color : #333;
+        --border-color :#dbdbdb;
+        --white-color : #fff;
+
+        --header-height :120px;
+        --navbar-height : 34px;
+        
+    }
+    html {
+        box-sizing: border-box;
+        /* font-size: 62.5%; */
+        line-height: 1.6rem;
+        font-family: 'Roboto',sans-serif;
+    }
+
+/* **************menu******************* */
+.navbar {
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    justify-content: flex-end;
+}
+
+.navbar .navbar-brand  {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.navbar .navbar-nav .menucon {
+    color: #c0c906;
+}
+
+.navbar .menucon {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.submenu .nav-icon {
+    font-size: 30px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.container-fluid a{
+line-height: 60px;
+}
+
+.submenu li{
+    padding: 0 10px;
+}
+.submenu a{
+    text-decoration: none ;
+    list-style: none ;
+    color: black;
+}
+
+.submenu i {
+    height:1rem;
+font-size: 1.5em;
+text-decoration: none ;
+}
+/* ************************* */
+
+
+/* button */
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+    background-color: honeydew;
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+/* ************************* */
+
+
+/* category-Danh mục */
+.content-category {
+    background-color: cornsilk;
+}
+
+.content-cate {
+    padding-top: 35px;
+}
+
+.category {
+    border-radius: 2px;
+    background-color: wheat;
+
+}
+
+.category__heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    padding: 16px 16px 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+/* .category-item--active .category-item__link {
+    color: var(--primary-color);
+} */
+
+.category-list {
+    padding: 0 0 8px 0;
+    list-style:none;
+}
+
+
+.category-item__link {
+    position: relative;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 6px 20px;
+    display: block;
+}  
+
+.category-item {
+    position: relative;
+}
+
+.category-item:first-child::before {
+    display: none;
+}
+
+.category-item::before {
+    content: "";
+    border-top: 3px solid #e1e1e1b2;
+    position: absolute;
+    top :0;
+    left: 16px;
+    right: 16px;
+}
+
+.category-item a:hover {
+    color: var(--primary-color);
+}
+/* ************************* */
+
+
+/* Select input */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 16px;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top :1px;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+
+.select-input__link {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+
+}
+
+/* ************************* */
+
+
+/* Sort + Filter */
+.home-filter {
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.home-filter__label{
+    font-size: 1.4rem;
+    color: #555;
+    margin-left: 16px;
+}
+
+.home-filter__btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+.home-filter__page {
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    margin-left: 100px;  
+}
+
+.home-filter__page-num {
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 22px;
+}
+
+.home-filter__page-current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control{
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 60px;
+    height: 36px;
+}
+
+.home-filter__page-btn {
+    flex: 1;
+    background-color:white;
+    text-decoration: none;
+}
+
+.home-filter__page-btn--disabled {
+    cursor: default;
+    background-color: #f9f9f9;
+}
+
+.home-filter__page-btn--disabled .home-filter__page-icon {
+    color: #ccc;
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-icon {
+    color: #555;
+    margin: auto;
+    font-size: 1.4rem;
+
+}
+/* ************************* */
+
+
+/* Product item */
+.home-product {
+    margin-bottom: 10px;
+}
+
+.home-product-item {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: wheat;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+}
+
+.home-product-item:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home-product-item__img {
+    /* background-image: url(/assets/SP/cc/bd1.png); */
+    background-repeat: no-repeat;
+    padding-top: 100%;
+    background-size: contain;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.home-product-item__img img{
+    max-width: 100%;
+    height: 155px;
+    position: fixed;
+    margin-top: -160px;
+    margin-left: 10px;
+}
+
+.home-product-item__name {   
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: black;
+    height: 3.5rem;
+    line-height: 1.8rem;
+    margin: 10px 10px 6px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.home-product-item__price { 
+    display: flex;
+    
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.home-product-item__price-old { 
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.home-product-item__price-current { 
+    
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-left: 3px;
+
+}
+.home-product-item__action { 
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 10px 0;
+
+}
+.home-product-item__like { 
+    font-size: 1.3rem;
+}
+
+i.home-product-item__like-icon-fill {
+    color: #f63d30;
+    display: none ;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-fill {
+    display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-emty {
+    display: none;
+}
+.home-product-item__rating { 
+    font-size: 1rem;
+    transform: scale(0.8);
+    transform-origin: right;
+    color: #d5d5d5;
+
+}
+
+.home-product-item__star--gold {
+    color: #ffce3e;
+}
+
+.home-product-item__favourite { 
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px; ;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.home-product-item__favourite::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+
+.home-product-item__favourite span {
+    color: var(--white-color);
+}
+
+.home-product-item__favourite i {
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin : 0 2px 0 5px;
+
+}
+.home-product-item__sale-off { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    background-color: rgba(255, 216, 64, 0.94);
+    border-top-right-radius: 2px;
+
+}
+
+.home-product-item__sale-off::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-width: 0 20px 6px;
+    border-style: solid;
+    color: rgba(255, 216, 64, 0.94);
+    border-color: transparent currentColor transparent currentColor;
+
+}
+.home-product-item__sale-off-percent { 
+    color: #EE4D2D;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    position: relative;
+    top: -1px;
+
+}
+.home-product-item__sale-off-label { 
+    color: var(--white-color);
+    position: relative;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    top: -10px;
+}
+
+.home-product__pagination {
+    margin: 48px 0 32px 0;
+}
+
+/* ************************* */
+
+/* pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* .pagination-item__icon {
+
+} */
+/* ************************* */
+
+/* Responsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: 16,6667%; */
+    width: 15%;
+}
+
+.grid__column-2-4{
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: 82%; */
+    width: 85%;
+}
+
+/* footer */
+.footer {
+    padding-top: 12px;
+    border-top: 4px solid var(--primary-color);
+    background-color: whitesmoke;
+}
+
+.footer__heading {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer_list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 2px 0;
+    display: block;
+    align-items: center;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.2rem;
+    margin-top: -1px
+    ;
+}
+
+.footer__dowload {
+    display: flex;
+}
+
+.footer__dowload-apps{
+    flex: 1;
+}
+.footer__dowload-app-img {
+    height: 100px;
+}
+
+.footer__bottom {
+    background-color: #f5f5f5;
+    padding: 8px 0;
+    margin-top: 36px;
+}
+
+.footer__text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #737373;
+}
+/* ************************* */
+
+</style>
+</html>
